@@ -11,7 +11,7 @@ import SwiftUI
 struct BudgetPlannerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LayoutView()
         }
     }
 }
