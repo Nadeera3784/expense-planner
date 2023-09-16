@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct LayoutView: View {
+    @State var selectedTab: String = "plus.circle"
     
-    init(){
-           UITabBar.appearance().backgroundColor = UIColor.white
-    }
+//    init(){
+//        UITabBar.appearance().backgroundColor = UIColor.white
+//    }
     
     var body: some View {
         NavigationView{
-           AddTabbar()
+            AddTabbar()
        }
     }
     
@@ -39,6 +40,7 @@ struct LayoutView: View {
                 Image(systemName: "waveform.circle")
             }
         }
+        .cornerRadius(10)
         .accentColor(.black)
     }
 }
@@ -48,3 +50,6 @@ struct ContentView_Previews: PreviewProvider {
         LayoutView()
     }
 }
+
+
+

@@ -17,7 +17,8 @@ struct SummaryWidgetView: View {
                 .fill(.linearGradient(colors: [
                 Color("Purple"),
                 Color("Gradient2"),
-                Color("Gradient3")],startPoint: .topLeading, endPoint: .bottomTrailing))
+                Color("Gradient3")], startPoint: .topLeading, endPoint: .bottomTrailing)
+            )
             VStack(spacing: 15){
                 VStack(spacing:15){
                     Text("Total Balance")
